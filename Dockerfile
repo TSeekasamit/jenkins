@@ -1,8 +1,8 @@
 FROM openjdk:8-jdk
 MAINTAINER Teerawit S. (tseekasamit@gmail.com)
 
-ENV http_proxy http://webproxy.int.westgroup.com:80
-ENV https_proxy http://webproxy.int.westgroup.com:80
+#ENV http_proxy http://webproxy.int.westgroup.com:80
+#ENV https_proxy http://webproxy.int.westgroup.com:80
 
 RUN apt-get update && apt-get install -y git curl && rm -rf /var/lib/apt/lists/*
 
